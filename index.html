@@ -5,20 +5,33 @@
   <link rel="stylesheet" href="main.css">
   <link href='https://fonts.googleapis.com/css?family=Lato:200,300,400,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Muli:200,300" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/jssor.slider.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script>
+        $(document).ready(function ($) {
+            var options = {
+                $AutoPlay: 1,                                   //[Optional] Auto play or not, to enable slideshow, this option must be set to greater than 0. Default value is 0. 0: no auto play, 1: continuously, 2: stop at last slide, 4: stop on click, 8: stop on user navigation (by arrow/bullet/thumbnail/drag/arrow key navigation)
+                $DragOrientation: 1                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $Cols is greater than 1, or parking position is not 0)
+            };
+
+            var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+        });
+    </script>
 </head>
 
 <body>
 	<section class="bg-color-grey banner">
-		<div class="container">
-			<div class="row">
-				<div class="col"></div>
-				<div class="col is-5">
-					<img class="profile-pic" src="sukan-profile.jpg" alt="Profile Picture">
-				</div>
-				<div class="col"></div>
-			</div>
-		</div>
+		<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px;
+        height: 300px;">
+        <!-- Slides Container -->
+        <div data-u="slides" style="position: absolute; left: 0px; top: 0px; width: 600px; height: 300px; overflow: hidden;">
+            <div><img data-u="image" src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=752&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" /></div>
+            <div><img data-u="image" src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=750&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" /></div>
+            <div><img data-u="image" src="https://images.unsplash.com/photo-1498753427761-548428edfa67?w=889&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" /></div>
+            
+        </div>
+    </div>
 	</section>
 
 	<section class="bg-color-tamizveli primary-info">
@@ -92,10 +105,11 @@
 
 	<section class="bg-color-tamizveli secondary-info">
 			<div class="container">
+			
 				<div class="row">
 					<div class="col">
 					<a href="upi://pay?pa=9094005600@upi&pn=TamizhVeli&mc=0000&tn=Pay%20to%20TamizhVeli&cu=INR">
-						<img src="assets/gpay.svg" alt="Google pay icon" height="50%" width="40%">
+						<img class = "social-media" src="assets/gpay.svg" alt="Google pay icon">
 					</a>	
 					</div>
 					<div class="col"></div>

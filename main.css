@@ -40,8 +40,8 @@ img.profile-pic {
 }
 
 img.social-media {
-	height: 20%;
-	width: 20%;
+	height: 30%;
+	width: 25%;
 	object-fit: cover;
 	border-radius: 50%;
 }
@@ -150,7 +150,7 @@ img.social-media {
 }
 
 .bg-color-tamizveli {
-	background-color: #445F70
+	background-color: #495C67
 }
 
 .text-name {
@@ -170,7 +170,7 @@ img.social-media {
 .text-detail {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    color: #575757;
+    color: #d7f6d0;
     font-size: 18px;
 }
 
@@ -203,4 +203,13 @@ img.social-media {
     height: 80%;
     width: 80%;
   }
+}
+
+[data-component="slideshow"] .slide {
+	display: none;
+  text-align: center;
+}
+
+[data-component="slideshow"] .slide.active {
+	display: block;
 }
