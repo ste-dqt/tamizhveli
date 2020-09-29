@@ -40,10 +40,10 @@ img.profile-pic {
 }
 
 img.social-media {
-	height: 100%;
-	width: 35%;
+	height: 30%;
+	width: 25%;
 	object-fit: cover;
-	border-radius: 100%;
+	border-radius: 50%;
 }
 
 .container {
@@ -164,7 +164,7 @@ img.social-media {
     font-family: 'Lato', sans-serif;
     font-weight: 200;
     color: #219653;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .text-detail {
@@ -203,13 +203,4 @@ img.social-media {
     height: 80%;
     width: 80%;
   }
-}
-
-[data-component="slideshow"] .slide {
-	display: none;
-  text-align: center;
-}
-
-[data-component="slideshow"] .slide.active {
-	display: block;
 }
